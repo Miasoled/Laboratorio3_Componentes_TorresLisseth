@@ -1,38 +1,40 @@
 .header {
-  background: var(--color-2);
-  border-bottom: 1px solid var(--color-3);
-  padding: 1rem 2rem;
+  background: var(--color-primary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.75rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-md);
 }
 
 .brand {
   font-family: var(--font-display);
-  font-size: 2rem;
-  color: var(--color-5);
-  letter-spacing: 0.05em;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
 .nav {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.25rem;
 }
 
 .itemMenu {
-  color: var(--color-4);
-  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+  font-weight: 500;
   text-decoration: none;
-  padding: 0.4rem 1rem;
-  border-radius: 4px;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  transition:
-    background 0.2s,
-    color 0.2s;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: var(--transition);
 }
 
 .itemMenu:hover {
-  background: var(--color-3);
-  color: var(--color-5);
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
 }

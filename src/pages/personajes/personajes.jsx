@@ -16,8 +16,8 @@ export const PersonajesPage = () => {
   }, []);
 
   return (
-    <>
-      <h1>Personajes Rick and Morty consumo de API</h1>
+    <div className={styles.personajesPage}>
+      <h1 className={styles.title}>Personajes de Rick and Morty</h1>
       <div className={styles.contenedorPersonaje}>
         {personajes.map((personaje) => (
           <PersonajeCard
@@ -28,6 +28,6 @@ export const PersonajesPage = () => {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 };

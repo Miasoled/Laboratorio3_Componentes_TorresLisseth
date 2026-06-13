@@ -6,7 +6,6 @@ export const ConceptoCard = ({ imagen, titulo, descripcion }) => {
     <div className={styles.conceptoCard}>
       <div className={styles.imageWrapper}>
         <img src={imagen} alt={titulo} className={styles.imagen} />
-        <div className={styles.overlay} />
       </div>
       <div className={styles.content}>
         <h3 className={styles.titulo}>{titulo}</h3>
