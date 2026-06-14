@@ -53,7 +53,9 @@ export const InicioPage = () => {
   return (
     <div className={styles.inicio}>
       <div className={styles.hero}>
-        <h1 className={styles.title}>Componentes Reutilizables con React</h1>
+        <h1 className={styles.title}>
+          Componentes Reutilizables con React Modificado
+        </h1>
         <p className={styles.desc}>
           Exploración de las tecnologías y conceptos fundamentales para el
           desarrollo de aplicaciones web modernas.
