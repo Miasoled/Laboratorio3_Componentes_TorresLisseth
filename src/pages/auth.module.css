@@ -1,0 +1,121 @@
+.page {
+  width: min(960px, 100%);
+  margin: 0 auto -2rem;
+}
+
+.shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(350px, 0.82fr);
+  height: 500px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(228, 230, 240, 0.9);
+  border-radius: 28px;
+  box-shadow: 0 24px 65px rgba(11, 70, 73, 0.16);
+}
+
+.visual {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: #092f39;
+}
+
+.visual img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 38%;
+}
+
+.visualCopy {
+  position: absolute;
+  inset: auto 1.5rem 1.5rem;
+  color: white;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  background: rgba(7, 43, 52, 0.72);
+  backdrop-filter: blur(14px);
+}
+
+.visualCopy strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  margin-bottom: 0.3rem;
+}
+
+.visualCopy span {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+}
+.formPanel {
+  display: flex;
+  align-items: center;
+  min-height: 0;
+  padding: 1.5rem 2.1rem;
+}
+.formInner {
+  width: 100%;
+  max-width: 410px;
+  margin: auto;
+}
+.eyebrow {
+  color: var(--color-accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+.subtitle {
+  color: var(--color-text-muted);
+  margin: 0.35rem 0 1.1rem;
+  font-size: 0.92rem;
+}
+.form {
+  display: grid;
+  gap: 0.8rem;
+}
+.footer {
+  color: var(--color-text-muted);
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 850px) {
+  .shell {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .page {
+    margin: 0 auto -1rem;
+  }
+  .visual {
+    height: 190px;
+    min-height: 190px;
+  }
+  .visualCopy {
+    inset: auto 1rem 1rem;
+  }
+  .formPanel {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-height: 760px) and (min-width: 851px) {
+  .shell {
+    height: 455px;
+  }
+  .formPanel {
+    padding-block: 1rem;
+  }
+  .visualCopy {
+    inset: auto 1rem 1rem;
+  }
+}

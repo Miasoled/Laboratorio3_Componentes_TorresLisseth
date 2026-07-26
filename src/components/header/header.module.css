@@ -21,10 +21,13 @@
 
 .nav {
   display: flex;
+  align-items: center;
   gap: 0.25rem;
+  flex-wrap: wrap;
 }
 
-.itemMenu {
+.itemMenu,
+.menuButton {
   color: rgba(255, 255, 255, 0.85);
   font-size: 0.9rem;
   font-weight: 500;
@@ -34,7 +37,29 @@
   transition: var(--transition);
 }
 
-.itemMenu:hover {
+.menuButton {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.itemMenu:hover,
+.menuButton:hover {
   background: rgba(255, 255, 255, 0.15);
   color: #ffffff;
+}
+
+@media (max-width: 780px) {
+  .header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .itemMenu,
+  .menuButton {
+    padding: 0.4rem 0.6rem;
+  }
 }

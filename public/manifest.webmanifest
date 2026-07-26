@@ -1,0 +1,13 @@
+{
+  "name": "WebLab - Gestión de Productos",
+  "short_name": "WebLab",
+  "description": "PWA para autenticación y gestión de productos",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f9f7",
+  "theme_color": "#078f92",
+  "icons": [
+    { "src": "/pwa-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/pwa-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
